@@ -66,6 +66,9 @@
 " Toggle spell check. 'o' for 'orthography'
     map <leader>o :setlocal spell! spelllang=en_us<CR>
 
+""""""""""""""""
+" Auto Actions "
+""""""""""""""""
+" Automatically remove trailing whitespaces before saving files
+    autocmd BufWritePre * %s/\s\+$//e
 
-vnoremap J :move '>+1<CR>gv=gv
-vnoremap K :move '<-2<CR>gv=gv
